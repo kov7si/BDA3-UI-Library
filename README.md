@@ -18,6 +18,19 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Testing
+
+You can run the tests using following command:
+
+```bash
+yarn test
+```
+
+[Jest](https://jestjs.io/) is used as the testing framework.
+
+In addition, the project uses [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) for better React component support.
+
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
