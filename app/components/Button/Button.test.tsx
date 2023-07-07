@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import { Button, ButtonProps } from './Button';
+import { Button, ButtonProps, sizeClasses } from './Button';
 
 describe('Button component', () => {
   const defaultProps: ButtonProps = {
@@ -31,7 +31,7 @@ describe('Button component', () => {
   it('renders with different size prop', () => {
     const { getByText } = render(<Button {...defaultProps} size="small" />);
     const button = getByText('Test Button');
-    expect(button).toHaveClass('small');
+    expect(button).toHaveClass(sizeClasses["small"]);
   });
 
   it('calls onClick when clicked', () => {

@@ -21,6 +21,12 @@ export interface ButtonProps {
   onClick?: () => void;
 }
 
+export const sizeClasses = {
+    small: 'px-4 py-2 text-sm',
+    medium: 'px-6 py-3 text-base',
+    large: 'px-8 py-4 text-lg',
+  };
+
 /**
  * Primary UI component for user interaction
  */
@@ -32,11 +38,7 @@ export const Button = ({
   ...props
 }: ButtonProps) => {
   const mode = primary ? 'bg-slate-400' : 'bg-slate-800';
-  const sizeClasses = {
-    small: 'px-4 py-2 text-sm',
-    medium: 'px-6 py-3 text-base',
-    large: 'px-8 py-4 text-lg',
-  };
+  
 
   return (
     <button
